@@ -77,7 +77,7 @@ def hangman():
         
         # Input validation
         if len(guess) != 1 or not guess.isalpha():
-            print("❌Invalid input! Please enter a single letter (A-Z).")
+            print("Invalid input! Please enter a single letter (A-Z).")
             continue
         
         if guess in guessed_letters:
@@ -89,7 +89,7 @@ def hangman():
         
         # Check if guess is correct
         if guess in secret_word:
-            print(f"✅Good guess! '{guess}' is in the word.")
+            print(f"Good guess! '{guess}' is in the word.")
             # Update display word
             for i in range(word_length):
                 if secret_word[i] == guess:
